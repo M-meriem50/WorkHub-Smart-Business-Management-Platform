@@ -1,0 +1,451 @@
+/* CONFIGURATION GLOBALE  */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Inter', sans-serif; 
+}
+
+body { 
+    background-color: #eef7fa; 
+    color: #1a4a5a; 
+    overflow-x: hidden; 
+}
+
+/*
+   LOGIN PAGE
+ */
+.login-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2e6e7e 0%, #4a8fa0 50%, #3a7a8a 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 40px 20px;
+}
+
+.login-logo {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.login-logo img {
+    height: 80px;
+}
+
+.login-main-title {
+    color: white;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.login-card {
+    background: #dff0f5;
+    border-radius: 20px;
+    padding: 50px 60px;
+    width: 100%;
+    max-width: 620px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.login-title {
+    font-size: 26px;
+    font-weight: 800;
+    color: #1a4a5a;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.login-field {
+    margin-bottom: 20px;
+}
+
+.login-field label {
+    display: block;
+    font-weight: 700;
+    color: #2e6e7e;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.login-field input {
+    width: 100%;
+    padding: 18px 20px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    font-size: 15px;
+    color: #888;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.login-field input:focus {
+    box-shadow: 0 0 0 2px #4a8291;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 18px;
+    background: #1a4a5a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transition: background 0.2s;
+}
+
+.login-btn:hover {
+    background: #0f3242;
+}
+
+.login-or {
+    text-align: center;
+    color: #446874;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a4a5a;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: box-shadow 0.2s;
+}
+
+.social-btn:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+}
+
+.social-btn img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.login-footer {
+    text-align: right;
+    font-size: 14px;
+    color: #446874;
+}
+
+.login-footer a {
+    color: #1a4a5a;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* 
+   NAVIGATION
+ */
+.top-navbar {
+    height: 90px; 
+    background: #4a8291;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: 0 8%; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000;
+}
+.nav-logo { height: 110px; }
+.nav-menu a { 
+    color: white; 
+    text-decoration: none; 
+    margin: 0 15px; 
+    font-weight: 600; 
+}
+.avatar-img { 
+    height: 50px; 
+    border-radius: 50%; 
+    border: 3px solid white; 
+}
+
+/*
+   HERO SECTION
+ */
+.hero-section { padding: 60px 8%; }
+.hero-container { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 40px; 
+}
+.hero-text h1 { 
+    font-size: 52px; 
+    font-weight: 800; 
+    color: #000; 
+    line-height: 1.1; 
+    margin-bottom: 20px; 
+}
+.hero-desc { 
+    font-size: 19px; 
+    color: #446874; 
+    margin-bottom: 30px; 
+    line-height: 1.5; 
+}
+.start-btn { 
+    background: #1a4a5a; 
+    color: white; 
+    border: none; 
+    padding: 15px 35px; 
+    border-radius: 8px; 
+    font-weight: 700; 
+    cursor: pointer; 
+}
+.hero-image img { width: 100%; max-width: 550px; }
+
+/*HOW IT WORKS*/
+
+.how-it-works { padding: 60px 8%; }
+.section-title { 
+    font-size: 36px; 
+    font-weight: 800; 
+    text-align: left; 
+    margin-bottom: 40px; 
+}
+.step-card { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin-bottom: 60px; 
+    gap: 60px; 
+}
+.step-card.reverse { flex-direction: row-reverse; }
+.step-info h3 { font-size: 28px; font-weight: 800; margin-bottom: 15px; }
+.step-info p { font-size: 18px; color: #446874; max-width: 500px; }
+.step-visual img { width: 100%; max-width: 380px; border-radius: 15px; }
+
+/*AI SECTION*/
+
+.ai-interaction { 
+    padding: 50px 8%; 
+    text-align: center; 
+}
+.ai-subtitle { 
+    font-size: 18px; 
+    color: #446874; 
+    margin-bottom: 40px; 
+}
+.ai-flow-container { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+}
+.ai-chat-card img { 
+    width: 100%; 
+    max-width: 250px; 
+    border-radius: 20px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+}
+.flow-arrow { 
+    width: 45px; 
+    flex-shrink: 0;
+}
+.flow-arrow img { width: 100%; height: auto; }
+
+/*WHY CHOOSE*/
+.why-choose { 
+    padding: 60px 8%; 
+}
+
+.benefit-row { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding: 35px 0;
+    border-bottom: 1px solid #d0e4eb;
+    gap: 20px;
+}
+
+.benefit-content { 
+    flex: 1;
+    text-align: left; 
+}
+
+.benefit-content h3 { 
+    font-size: 26px; 
+    font-weight: 700; 
+    margin-bottom: 8px; 
+    color: #1a4a5a; 
+}
+
+.benefit-content p { 
+    font-size: 16px; 
+    color: #446874; 
+}
+
+.benefit-icon-right { 
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.benefit-row-last {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 35px 0;
+    border-bottom: none;
+}
+
+.benefit-row-last .benefit-content {
+    width: 100%;
+}
+
+.charts-grid { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    max-width: 750px; 
+    margin-top: 30px; 
+}
+
+.chart { 
+    width: 100%; 
+    max-height: 220px; 
+    object-fit: contain; 
+    border-radius: 16px; 
+    background: white; 
+    padding: 20px; 
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06); 
+}
+
+/*FILES PAGE*/
+
+.files-hero {
+    background-color: #dff0f5;
+    min-height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 5%;
+    gap: 20px;
+    position: relative;
+}
+
+.files-left {
+    flex: 0 0 auto;
+}
+
+.files-laptop {
+    width: 260px;
+    object-fit: contain;
+}
+
+.files-center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.files-search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 50px;
+    padding: 12px 20px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    gap: 10px;
+}
+
+.files-search-bar input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #888;
+    flex: 1;
+    background: transparent;
+}
+
+.files-search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.files-title {
+    font-size: 30px;
+    font-weight: 800;
+    color: #1a4a5a;
+    text-align: left;
+    line-height: 1.3;
+    align-self: flex-start;
+    max-width: 380px;
+}
+
+.files-right {
+    flex: 0 0 auto;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.files-graph {
+    width: 260px;
+    object-fit: contain;
+}
+
+.files-bot {
+    width: 90px;
+    object-fit: contain;
+    position: absolute;
+    bottom: -20px;
+    right: -10px;
+}
+
+
+@media (max-width: 768px) {
+    .login-card { padding: 35px 25px; }
+    .login-main-title { font-size: 22px; }
+    .social-buttons { flex-direction: column; align-items: center; }
+    .hero-container, .step-card, .ai-flow-container, .benefit-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .benefit-content { flex: 1; }
+    .flow-arrow { transform: rotate(90deg); }
+    .charts-grid { max-width: 100%; }
+}
